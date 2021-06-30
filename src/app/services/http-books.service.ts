@@ -9,17 +9,19 @@ import {
 import { Observable, throwError } from 'rxjs';
 import { Book } from '../models/book';
 import { catchError, tap } from 'rxjs/operators';
+import {Users} from "../models/users";
 
 @Injectable({
   providedIn: 'root',
 })
-export class HttpMoviesService {
+export class HttpBooksService {
   private url = 'http://localhost:3000/books';
+  private url2 = 'http://localhost:3000/users';
 
   constructor(private http: HttpClient) {}
 
-  getMovies(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.url).pipe(tap(console.log));
+  getUsers(): Observable<Book[]> {
+    return this.http.get<Users[]>(this.url).pipe(tap(console.log));
   }
 
   // Dodatkowe konfiguracje w zapytaniu
@@ -29,7 +31,7 @@ export class HttpMoviesService {
   //     .pipe(tap(console.log));
   // }
 
-  postMovie(movie: Book): Observable<Book> {
+  postBook(movie: Book): Observable<Book> {
     return this.http.post<Book>(this.url, movie).pipe(tap(console.log));
   }
 
