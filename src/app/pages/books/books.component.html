@@ -1,0 +1,7 @@
+<div class="grid">
+  <app-book-layout
+    *ngFor="let book of books | async"
+    [book]="book"
+    >
+  </app-book-layout>
+</div>
