@@ -1,0 +1,60 @@
+<div class="grid">
+    <form (ngSubmit)="send()" class="container" #form="ngForm">
+        <div class="row">
+            <div class="input-field col s8">
+                <input
+                        [(ngModel)]="model.title"
+                        id="title"
+                        name="title"
+                        type="text"
+                        required
+                        minlength='2'
+                        #title="ngModel"
+                />
+                <label for="title">Title</label>
+<!--                <ng-container *ngIf='title.invalid && title.touched'>-->
+<!--                    <div class='card-panel red darken-1' *ngIf='title.errors.required'>-->
+<!--                        Field required-->
+<!--                    </div>-->
+<!--                    <div class='card-panel red darken-1' *ngIf='title.errors.minlength'>-->
+<!--                        Text is to short-->
+<!--                    </div>-->
+<!--                </ng-container>-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s8">
+                <input
+                        [(ngModel)]="model.author"
+                        id="author"
+                        name="author"
+                        type="text"
+                        required
+                />
+                <label for="author">Author</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s8">
+                <input [(ngModel)]="model.ISBN" id="ISBN" name="ISBN" type="text" required/>
+                <label for="ISBN">ISBN</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s8">
+                <input
+                        [(ngModel)]="model.poster"
+                        id="poster"
+                        name="poster"
+                        type="text"
+                        required
+                />
+                <label for="poster">Poster</label>
+            </div>
+        </div>
+        <button class="btn-small" type="submit" [disabled]='form.invalid'>Send</button>
+        <button class="btn-small red" type="reset">Reset</button>
+    </form>
+</div>

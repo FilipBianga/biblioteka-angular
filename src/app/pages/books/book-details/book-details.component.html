@@ -1,0 +1,21 @@
+<div class="row" *ngIf="bookDetails | async as book">
+  <div class="col s4"><img [src]="book.poster" /></div>
+  <table class="col s8">
+    <tbody>
+    <tr>
+      <td>Title</td>
+      <td>{{ book.title }}</td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td>{{ book.author }}</td>
+    </tr>
+    <tr>
+      <td>ISBN</td>
+      <td>{{ book.ISBN }}</td>
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn black" (click)="goToBooks()">Back</button>
+  <button class="btn black"  (click)="addToUser(book)">Wypożycz</button>
+</div>
