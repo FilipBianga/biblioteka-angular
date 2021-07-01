@@ -1,0 +1,10 @@
+<div class="row" *ngIf="userDetails | async as user">
+    <table class="col s8">
+        <tbody>
+        <tr>
+            <td>{{ user.username }}</td>
+        </tr>
+    </table>
+    <button class="btn black" (click)="goToBooks()">Back</button>
+</div>
+<!--<app-book-borrow></app-book-borrow>-->

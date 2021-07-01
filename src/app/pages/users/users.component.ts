@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {Observable} from "rxjs";
 import {Users} from "../../models/users";
 import {HttpService} from "../../services/http.service";
@@ -12,6 +12,7 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit{
+  @Input() user!:Users;
   users!: Users[];
 
   constructor(private http: HttpClient) {}
@@ -23,8 +24,4 @@ export class UsersComponent implements OnInit{
     });
   }
 
-  // goToBooks() {
-  //   // this.router.navigate(['/movies']);
-  //   this.location.back();
-  // }
 }

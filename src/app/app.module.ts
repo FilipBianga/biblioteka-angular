@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AddBookComponent } from './pages/add-book/add-book.component';
 import { BooksComponent } from './pages/books/books.component';
@@ -14,18 +13,27 @@ import {AppRoutingModule} from "./app-routing.module";
 import { UsersComponent } from './pages/users/users.component';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { SearchFilterPipe } from './search-filter.pipe';
+import { BookSearchComponent } from './pages/books/book-search/book-search.component';
+import { UserDetailsComponent } from './pages/users/user-details/user-details.component';
+import { BookBorrowComponent } from './pages/books/book-borrow/book-borrow.component';
+import { UserSelectComponent } from './pages/users/user-select/user-select.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     AddBookComponent,
     BooksComponent,
     BookDetailsComponent,
     PageNotFoundComponent,
     BookLayoutComponent,
     UsersComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    BookSearchComponent,
+    UserDetailsComponent,
+    BookBorrowComponent,
+    UserSelectComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

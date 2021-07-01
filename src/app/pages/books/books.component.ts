@@ -9,12 +9,13 @@ import {HttpService} from "../../services/http.service";
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent implements OnInit {
-  searchValue!: string;
   books!: Observable<Book[]>;
   constructor(private http: HttpService) { }
+  library = [];
 
   ngOnInit(): void {
     this.books = this.http.getBooks();
   }
+
 
 }
