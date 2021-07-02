@@ -6,7 +6,7 @@ import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.compo
 import {AddBookComponent} from "./pages/add-book/add-book.component";
 import {UsersComponent} from "./pages/users/users.component";
 import {UserDetailsComponent} from "./pages/users/user-details/user-details.component";
-import {BookSearchComponent} from "./pages/books/book-search/book-search.component";
+import {BookSearchComponent} from "./pages/book-search/book-search.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/books', pathMatch: 'full'},

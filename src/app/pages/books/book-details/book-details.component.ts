@@ -6,8 +6,6 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Location } from '@angular/common';
 import {AddService} from "../../../services/add.service";
-import {Users} from "../../../models/users";
-import {UsersComponent} from "../../users/users.component";
 
 @Component({
   selector: 'app-book-details',
@@ -16,7 +14,9 @@ import {UsersComponent} from "../../users/users.component";
 })
 export class BookDetailsComponent implements OnInit {
   bookDetails!: Observable<Book>;
-  showMe:boolean=false
+  showMe:boolean=false;
+  value: number = Date.now();
+
   constructor(
     private http: HttpService,
     private route: ActivatedRoute,
