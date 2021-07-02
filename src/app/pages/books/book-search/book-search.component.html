@@ -16,7 +16,7 @@
             </thead>
             <tbody>
             <tr *ngFor="let book of books | filter:searchText">
-                <td [routerLink]="['/books', book.id]">{{book.title}}</td>
+                <td id="td-title" [routerLink]="['/books', book.id]">{{book.title}}</td>
                 <td [routerLink]="['/books', book.id]">{{book.author}}</td>
                 <td [routerLink]="['/books', book.id]">{{book.ISBN}}</td>
             </tr>

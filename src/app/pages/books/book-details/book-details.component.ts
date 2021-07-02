@@ -16,7 +16,7 @@ import {UsersComponent} from "../../users/users.component";
 })
 export class BookDetailsComponent implements OnInit {
   bookDetails!: Observable<Book>;
-
+  showMe:boolean=false
   constructor(
     private http: HttpService,
     private route: ActivatedRoute,
@@ -39,5 +39,9 @@ export class BookDetailsComponent implements OnInit {
   addToUser(book: Book){
     this.add.addToList(book);
     return this.location.back();
+  }
+
+  toogleTag(){
+    this.showMe = !this.showMe;
   }
 }

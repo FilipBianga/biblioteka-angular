@@ -17,5 +17,6 @@
     </tbody>
   </table>
   <button class="btn black" (click)="goToBooks()">Back</button>
-  <button class="btn black"  (click)="addToUser(book)">Wypożycz</button>
+  <button class="btn black"  (click)="toogleTag()">Wypożycz</button>
+  <app-users *ngIf="showMe"></app-users>
 </div>

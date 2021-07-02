@@ -1,4 +1,6 @@
 td:hover {
-    background-color: darkslategray;
     cursor: pointer;
+}
+#td-title:hover {
+    background-color: darkslategray;
 }
