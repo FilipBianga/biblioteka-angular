@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Aby uruchomić naszą aplikację na początku musimy postawić bazę danych. Link do bazy znajduję się poniżej
 
-link
+https://github.com/FilipBianga/biblioteka-angular-json-server
 
 Rozpakowujemy i otwieramy w terminalu nasz wypakowany katalog, następnie wpisujemy poniższe 
 komendy w celu uruchomienia serwera:
