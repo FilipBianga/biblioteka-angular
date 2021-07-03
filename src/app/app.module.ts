@@ -13,11 +13,13 @@ import {AppRoutingModule} from "./app-routing.module";
 import { UsersComponent } from './pages/users/users.component';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { SearchFilterPipe } from './search-filter.pipe';
-import { BookSearchComponent } from './pages/books/book-search/book-search.component';
+import { BookSearchComponent } from './pages/book-search/book-search.component';
 import { UserDetailsComponent } from './pages/users/user-details/user-details.component';
 import { BookBorrowComponent } from './pages/books/book-borrow/book-borrow.component';
-import { UserSelectComponent } from './pages/users/user-select/user-select.component';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { FooterComponent } from './pages/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -32,8 +34,9 @@ import { LoginComponent } from './login/login.component';
     BookSearchComponent,
     UserDetailsComponent,
     BookBorrowComponent,
-    UserSelectComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     Ng2SearchPipeModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

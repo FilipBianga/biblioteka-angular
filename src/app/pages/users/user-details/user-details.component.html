@@ -1,5 +1,5 @@
 <div class="row" *ngIf="userDetails | async as user">
-    <table class="col s8">
+    <table class="col s8" style="width: 100%">
         <tbody>
         <tr>
             <td>{{ user.username }}</td>
@@ -7,4 +7,4 @@
     </table>
     <button class="btn black" (click)="goToBooks()">Back</button>
 </div>
-<!--<app-book-borrow></app-book-borrow>-->
+<app-book-borrow></app-book-borrow>

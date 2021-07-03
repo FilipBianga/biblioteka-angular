@@ -18,5 +18,13 @@
   </table>
   <button class="btn black" (click)="goToBooks()">Back</button>
   <button class="btn black"  (click)="toogleTag()">Wypożycz</button>
-  <app-users *ngIf="showMe"></app-users>
+  <div *ngIf="showMe">
+    <h5>Choose reader</h5>
+    <app-users></app-users>
+  </div>
 </div>
+<div *ngIf="showMe" class="div-date">
+  <h5>Choose Date</h5>
+  <input class="my-input" type="date" [(ngModel)]="value"/>
+</div>
+
