@@ -16,7 +16,6 @@ import { SearchFilterPipe } from './search-filter.pipe';
 import { BookSearchComponent } from './pages/book-search/book-search.component';
 import { UserDetailsComponent } from './pages/users/user-details/user-details.component';
 import { BookBorrowComponent } from './pages/books/book-borrow/book-borrow.component';
-import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { FooterComponent } from './pages/footer/footer.component';
 
@@ -34,7 +33,6 @@ import { FooterComponent } from './pages/footer/footer.component';
     BookSearchComponent,
     UserDetailsComponent,
     BookBorrowComponent,
-    LoginComponent,
     NavbarComponent,
     FooterComponent
   ],

@@ -11,7 +11,7 @@ import {HttpBooksService} from "../../services/http-books.service";
 })
 export class AddBookComponent implements OnInit {
   model: Partial<Book> = {};
-
+  message = "You've successfully added a book!";
   constructor(private http: HttpService, private httpBooksService: HttpBooksService) {}
 
   ngOnInit(): void {
@@ -23,6 +23,10 @@ export class AddBookComponent implements OnInit {
         result => console.log(result),
         error => console.error(error)
     )
+  }
+
+  alertSuccess() {
+    alert(this.message)
   }
 
 }

@@ -8,18 +8,8 @@
                         name="title"
                         type="text"
                         required
-                        minlength='2'
-                        #title="ngModel"
                 />
                 <label for="title">Title</label>
-<!--                <ng-container *ngIf='title.invalid && title.touched'>-->
-<!--                    <div class='card-panel red darken-1' *ngIf='title.errors.required'>-->
-<!--                        Field required-->
-<!--                    </div>-->
-<!--                    <div class='card-panel red darken-1' *ngIf='title.errors.minlength'>-->
-<!--                        Text is to short-->
-<!--                    </div>-->
-<!--                </ng-container>-->
             </div>
         </div>
 
@@ -54,7 +44,9 @@
                 <label for="poster">Poster</label>
             </div>
         </div>
-        <button class="btn-small" type="submit" [disabled]='form.invalid'>Send</button>
+        <button class="btn-small" type="submit" [disabled]='form.invalid' (click)="alertSuccess()">Send</button>
         <button class="btn-small red" type="reset">Reset</button>
+
     </form>
+
 </div>

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs";
-import {Book} from "../../../models/book";
 import {HttpService} from "../../../services/http.service";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {ActivatedRoute, ParamMap} from "@angular/router";
 import {Location} from "@angular/common";
 import {switchMap} from "rxjs/operators";
 import {Users} from "../../../models/users";
@@ -18,7 +17,6 @@ export class UserDetailsComponent implements OnInit {
   constructor(
       private http: HttpService,
       private route: ActivatedRoute,
-      private router: Router,
       private location: Location
   ) {
   }

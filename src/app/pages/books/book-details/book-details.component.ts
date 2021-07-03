@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
 import {Book} from "../../../models/book";
 import { HttpService } from '../../../services/http.service';
@@ -38,7 +38,6 @@ export class BookDetailsComponent implements OnInit {
 
   addToUser(book: Book){
     this.add.addToList(book);
-    return this.location.back();
   }
 
   toogleTag(){
