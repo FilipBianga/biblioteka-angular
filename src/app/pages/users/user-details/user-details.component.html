@@ -7,4 +7,9 @@
     </table>
     <button class="btn black" (click)="goToBooks()">Back</button>
 </div>
-<app-book-borrow></app-book-borrow>
+<div *ngFor="let borrowedBook of borrowBooks">
+    <p>{{borrowedBook.book.author}}</p>
+    <p>{{borrowedBook.date}}</p>
+    <button (click)="giveBackBook(borrowedBook.borrowID)">Zwroc</button>
+</div>
+

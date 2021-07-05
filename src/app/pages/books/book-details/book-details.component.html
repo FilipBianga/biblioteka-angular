@@ -17,14 +17,11 @@
     </tbody>
   </table>
   <button class="btn black" (click)="goToBooks()">Back</button>
-  <button class="btn black"  (click)="toogleTag()">Wypożycz</button>
+  <button class="btn black"  (click)="toogleTag()" [disabled]="isBorrowed">Wypożycz</button>
   <div *ngIf="showMe">
     <h5>Choose reader</h5>
-    <app-users></app-users>
+      <app-select-user-book-borrow (bookSuccessfullyBorrowed)="isBorrowed=true" [book]='book'></app-select-user-book-borrow>
   </div>
 </div>
-<div *ngIf="showMe" class="div-date">
-  <h5>Choose Date</h5>
-  <input class="my-input" type="date" [(ngModel)]="value"/>
-</div>
+
 

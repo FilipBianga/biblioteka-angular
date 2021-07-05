@@ -1,0 +1,173 @@
+{
+  "books": [
+    {
+      "title": "Grant's atlas of anatomy",
+      "author": "Anne M. R. Agur, Arthur F. Dalley",
+      "ISBN": "9781975138707",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/20-09/xx004936109.jpg",
+      "id": 1
+    },
+    {
+      "title": "Masaż izometryczny",
+      "author": "Joanna Buć",
+      "ISBN": "978-83-7846-121-0",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-03/xx004986056.jpg",
+      "id": 2
+    },
+    {
+      "title": "Handbook of neurosurgery",
+      "author": "Mark S. Greenberg",
+      "ISBN": "978-1-68420-137-2",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-02/xx005047721.jpg",
+      "id": 3
+    },
+    {
+      "title": "Microbial forensics",
+      "author": "edited by Bruce Budowle, Steven Schutzer, Stephen Morse",
+      "ISBN": "9781975138707",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-02/xx005050725.jpg",
+      "id": 4
+    },
+    {
+      "title": "Chest X-ray interpretation",
+      "author": "Ladli Chandratreya, Mike Darby",
+      "ISBN": "978-1-909836-86-0",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-02/xx005049360.jpg",
+      "id": 5
+    },
+    {
+      "title": "Winter's basic clinical pharmacokinetics",
+      "author": "Paul M. Beringer",
+      "ISBN": "978-1-4963-4642-1",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-02/xx005049116.jpg",
+      "id": 6
+    },
+    {
+      "title": "Toxicology and regulatory process",
+      "author": "edited by Sidney Green",
+      "ISBN": "978-0-8247-2385-9",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-02/xx005048716.jpg",
+      "id": 7
+    },
+    {
+      "title": "Rekomendacje diagnostyki i leczenia astmy",
+      "author": "Adam Antczak, Agata Dutkowska",
+      "ISBN": "978-83-7988-307-3",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx004849433.jpg",
+      "id": 8
+    },
+    {
+      "title": "Aesthetic vaginal plastic surgery : a practical guide",
+      "author": "Lina Triana",
+      "ISBN": "978-3-030-24818-5",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx005038576.jpg",
+      "id": 9
+    },
+    {
+      "title": "Audiology practice management",
+      "author": "Brian J. Taylor",
+      "ISBN": "978-1-62623-254-9",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx005038742.jpg",
+      "id": 10
+    },
+    {
+      "title": "Choroba Parkinsona w pytaniach i odpowiedziach",
+      "author": "Jarosław Sławek",
+      "ISBN": "978-83-66097-55-1",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx004901304.jpg",
+      "id": 11
+    },
+    {
+      "title": "Ultrasonografia w ginekologii i położnictwie",
+      "author": "Marek Pietryga",
+      "ISBN": "978-83-62690-47-3",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx004802470.jpg",
+      "id": 12
+    },
+    {
+      "title": "Na własnej skórze : mała książka o wielkim narządzie",
+      "author": "Paulina Łopatniuk",
+      "ISBN": "978-83-66517-44-8",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx004998989.jpg",
+      "id": 13
+    },
+    {
+      "title": "Konturek fizjologia człowieka",
+      "author": "redakcja naukowa Tomasz Brzozowski",
+      "ISBN": "978-83-66310-09-4",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-01/xx004945040.jpg",
+      "id": 14
+    },
+    {
+      "title": "Biologiczne podstawy psychologii",
+      "author": "James W. Kalat ; przekład Anna i Marek Binderowie",
+      "ISBN": "978-83-01-21262-9",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-03/xx005058789.jpg",
+      "id": 15
+    },
+    {
+      "title": "Contrast-enhanced ultrasound in pediatric imaging",
+      "author": "editors Paul S. Sidhu, Maria E. Sellars, Annamaria Deganello",
+      "ISBN": "978-3-030-49690-6",
+      "poster": "https://biblioteka1.gumed.edu.pl/okladki/21-04/xx005100141.jpg",
+      "id": 16
+    },
+    {
+      "title": "Tytul",
+      "author": "Author",
+      "ISBN": "asd",
+      "poster": "Poster",
+      "id": 17
+    }
+  ],
+  "users": [
+    {
+      "username": "Jan Kowalski",
+      "id": 1
+    },
+    {
+      "username": "Józef Bogdan",
+      "id": 2
+    },
+    {
+      "username": "Anna Maria Magda",
+      "id": 3
+    },
+    {
+      "username": "Mikołaj Stępień",
+      "id": 4
+    },
+    {
+      "username": "Piotr Marszałek",
+      "id": 5
+    },
+    {
+      "username": "Weronika Kaczmarczyk",
+      "id": 6
+    },
+    {
+      "username": "Wiktor Wójcik",
+      "id": 7
+    },
+    {
+      "username": "Karolina Dąbrowksa",
+      "id": 8
+    },
+    {
+      "username": "Anna Łukasik",
+      "id": 9
+    },
+    {
+      "username": "Aleksandra Kozak",
+      "id": 10
+    }
+  ],
+    "borrow": [
+    {
+      "userID": "",
+      "bookID": "",
+      "date": "",
+      "id": 1
+    }
+    ]
+}

@@ -18,6 +18,7 @@ import { UserDetailsComponent } from './pages/users/user-details/user-details.co
 import { BookBorrowComponent } from './pages/books/book-borrow/book-borrow.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { SelectUserBookBorrowComponent } from './pages/users/select-user-book-borrow/select-user-book-borrow.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     UserDetailsComponent,
     BookBorrowComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SelectUserBookBorrowComponent
   ],
   imports: [
     BrowserModule,
