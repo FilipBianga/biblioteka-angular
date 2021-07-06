@@ -19,7 +19,6 @@
   <button class="btn black" (click)="goToBooks()">Back</button>
   <button class="btn black"  (click)="toogleTag()" [disabled]="isBorrowed">Wypożycz</button>
   <div *ngIf="showMe">
-    <h5>Choose reader</h5>
       <app-select-user-book-borrow (bookSuccessfullyBorrowed)="isBorrowed=true" [book]='book'></app-select-user-book-borrow>
   </div>
 </div>

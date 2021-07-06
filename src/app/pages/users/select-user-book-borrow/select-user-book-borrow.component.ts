@@ -22,6 +22,7 @@ export class SelectUserBookBorrowComponent implements OnInit {
   showMe = false;
   value: string = Date().toString();
   model: Partial<Borrow> = {};
+
   
 
 
@@ -61,6 +62,7 @@ export class SelectUserBookBorrowComponent implements OnInit {
         result => this.bookSuccessfullyBorrowed.emit(),
         error => console.error(error)
     )
+    this.showMe = !this.showMe;
   }
 
 
