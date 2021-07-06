@@ -7,9 +7,25 @@
     </table>
     <button class="btn black" (click)="goToBooks()">Back</button>
 </div>
-<div *ngFor="let borrowedBook of borrowBooks">
-    <p>{{borrowedBook.book.author}}</p>
-    <p>{{borrowedBook.date}}</p>
-    <button (click)="giveBackBook(borrowedBook.borrowID)">Zwroc</button>
+<div class="grid">
+    <div class="grid__item" *ngFor="let borrowedBook of borrowBooks">
+        <div class="card">
+            <div class="card-image">
+                <img [src]="borrowedBook.book.poster" />
+                <span class="card-title black">{{borrowedBook.book.title}}</span>
+            </div>
+            <div class="card-content">
+                <p>{{borrowedBook.book.author}}</p>
+                <br>
+                <b style="color: darkred">Until: {{borrowedBook.date}}</b>
+            </div>
+            <div class="card-action">
+                <button class="btn red" (click)="giveBackBook(borrowedBook.borrowID)">Zwroc</button>
+            </div>
+        </div>
+
+
+    </div>
 </div>
+
 

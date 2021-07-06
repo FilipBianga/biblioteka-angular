@@ -1,11 +1,12 @@
 <ng-container *ngIf="!showMe">
     <h5>Choose reader</h5>
     <div class="collection">
-        <p class="collection-item" *ngFor="let user of users" (click)="chooseUser(user)" [ngClass]="{chosenUser: chosenUserId === user.id}">{{user.username}}</p>
+        <p style="cursor: pointer;" class="collection-item" *ngFor="let user of users" (click)="chooseUser(user)" [ngClass]="{chosenUser: chosenUserId === user.id}">{{user.username}}</p>
     </div>
     <div class="div-date">
         <h5>Choose Date</h5>
         <input class="my-input" type="date" [(ngModel)]="value"/>
+        <button class="btn black" (click)="send()">Accept</button>
     </div>
-    <button class="btn black" (click)="send()">Taaak</button>
+
 </ng-container>

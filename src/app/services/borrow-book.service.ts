@@ -52,13 +52,8 @@ export class BorrowBookService {
 
   async isBorrowed(bookID: string | null) {
     const allBorrows: Borrow[] = await this.http.get<Borrow[]>(this.urlBorrow).toPromise();
-    console.log("allBorrows");
-    console.log(allBorrows);
     const borrow = allBorrows.find((bor) => String(bor.bookID) === String(bookID));
-    console.log('borrow');
-    console.log(borrow);
-    console.log('isborrowed')
-    console.log(Boolean(borrow))
+
     return Boolean(borrow);
   }
 

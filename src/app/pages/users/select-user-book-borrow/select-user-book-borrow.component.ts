@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter } from '@angular/core';
 import { Component, Input, OnInit, Output } from '@angular/core';
@@ -39,17 +38,11 @@ export class SelectUserBookBorrowComponent implements OnInit {
     });
   }
 
-  classChange(){
-    
-  }
   chooseUser(user: Users) {
     this.chosenUserId = user.id;
     console.log('Poszlo');
   }
 
-  toogleTag(){
-    this.showMe = !this.showMe;
-  }
 //interface Borrow {
  // userID: string;
  // bookID: string;
@@ -58,6 +51,9 @@ export class SelectUserBookBorrowComponent implements OnInit {
   send() {
     console.log(this.model);
     const x: Borrow = {userID: this.chosenUserId, bookID: this.book.id , date: this.value};
+    if (x.userID == '')
+      alert('You must choose reader and select date!')
+    else
     this.borrowService.postBorrow(x).subscribe(
         result => this.bookSuccessfullyBorrowed.emit(),
         error => console.error(error)

@@ -6,8 +6,6 @@ import {Location} from "@angular/common";
 import {switchMap} from "rxjs/operators";
 import {Users} from "../../../models/users";
 import { BorrowBookService } from 'src/app/services/borrow-book.service';
-import { Borrow } from 'src/app/models/borrow';
-import { Book } from 'src/app/models/book';
 import { BorrowedBook } from 'src/app/models/borrowed-book';
 
 @Component({
