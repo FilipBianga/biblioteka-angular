@@ -19,5 +19,4 @@ export class HttpBooksService {
     return this.http.post<Book>(this.url, movie).pipe(tap(console.log));
   }
 
-
 }
